@@ -1,10 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-04KNEJVV5W"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-04KNEJVV5W');
+    </script>
+
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+
+<button onclick="buyCar()">Buy Car</button>
+
+<p id="buyCar"></p>
+
+<script>
+    function buyCar() {
+        document.getElementById("buyCar").innerHTML = "Tesla Bought";
+    }
+</script>
+
+<button onclick="sellStock()">Sell Stock</button>
+
+<p id="sellStock"></p>
+
+<script>
+    function sellStock() {
+        document.getElementById("sellStock").innerHTML = "Stock Sold";
+    }
+</script>
 </body>
 </html>
